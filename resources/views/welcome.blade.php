@@ -84,6 +84,13 @@
                     Where is ...
                 </div>
 
+                <div>
+                    <form method="GET" action="find">
+                        <input type="text" name="id" placeholder="id"><br>
+                        <submit name="find" value="find">
+                    </form>
+                </div>
+
                 <div class="links">
                 </div>
             </div>
