@@ -87,7 +87,7 @@
                 <div>
                     <form method="GET" action="find">
                         <input type="text" name="id" placeholder="id"><br>
-                        <input type="submit" name="find" value="find">
+                        <input type="submit" name="action" value="find">
                     </form>
                 </div>
 
