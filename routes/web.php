@@ -12,11 +12,9 @@
 */
 
 Route::get('/', function () {
-    return ('Hello World!');
+    return view('welcome');
 });
 
-Route::group(['namespace' => 'Admin', 'prefix' => 'admin'], function () {
-	Route::get('/', 'Auth\LoginController@showLoginForm');
-	Route::post('login', 'Auth\LoginController@login');
-	Route::post('logout', 'Auth\LoginController@logout');
-});
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
