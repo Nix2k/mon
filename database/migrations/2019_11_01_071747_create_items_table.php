@@ -15,6 +15,10 @@ class CreateItemsTable extends Migration
     {
         Schema::create('items', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('hashid', 32)->unique();
+            $table->double('lat', 10, 8)->nullable();
+            $table->double('long', 10, 8)->nullable();
+            $table->double('height', 8, 2)->nullable();
             $table->timestamps();
         });
     }
